@@ -15,20 +15,21 @@
     color: white;
     padding-bottom: 80px; /* Jarak untuk menu bawah */
 }
-        
-<div class="header">
-    <!-- Ganti logo.png dengan nama fail gambar anda -->
-    <img src="logo.png" alt="Logo" class="profile-img">
-    
-    <h1 class="nama-bisnes">ANWSTORE</h1>
-    <p class="slogan">Pakar Kerja Besi Seremban (NS0079416-W)</p>
-    
-    <div style="font-size: 12px; color: #4ade80;">
-        ● Server Online 24 Jam
-    </div>
-</div>
-        
-.profile-info h1 {
+
+body { font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    background: radial-gradient(circle at top, #111d2b 0%, #080808 100%);
+    color: white;
+    text-align: center; /* Ini untuk pastikan semua ke tengah */ 
+    padding-bottom: 80px;
+} 
+.header {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Logo & Tulisan ke tengah */
+}
+    .profile-info h1 {
     font-size: 33px;
     margin: 10px 0 5px 0;
     font-weight: 900;
@@ -107,11 +108,20 @@
 </head>
 <body>
 
-    <!-- Ganti URL gambar logo anda di sini -->
-    <img src="https://via.placeholder.com/80" alt="Logo" class="profile-img">
-    <h1>ANWSTORE</h1>
-    <p class="subtitle">ACC COM1 DAN TOOL COM</p>
-    <span class="status">● Server Online 24 Jam</span>
+    <!-- Bahagian Header Warisan Ayob -->
+<div style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo" style="width: 90px; height: 90px; border-radius: 20px; border: 3px solid #eab308; margin-bottom: 10px;">
+    
+    <!-- Nama Bisnes Warna Hijau-Merah-Gold -->
+    <h1 style="font-size: 32px; margin: 0; font-weight: 900; text-transform: uppercase; background: linear-gradient(90deg, #22c55e 0%, #ef4444 50%, #eab308 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        WARISAN AYOB
+    </h1>
+    
+    <!-- Slogan & Info -->
+    <p style="color: #cbd5e1; font-size: 14px; margin: 5px 0;">Pakar Kerja Besi Seremban (NS0079416-W)</p>
+    <div style="font-size: 12px; color: #4ade80;">● Server Online 24 Jam</div>
+</div>
 
     <a href="https://wa.me/60105467200" class="btn-main btn-purple">
         <i class="fas fa-sign-in-alt"></i> Tempah Sekarang
