@@ -108,18 +108,36 @@ body { font-family: 'Poppins', sans-serif;
 </head>
 <body>
 
-    <!-- Bahagian Header Warisan Ayob -->
+    <!-- Bahagian Header Warisan Ayob dengan Animasi Warna Bergerak -->
 <div style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
     <!-- Logo -->
     <img src="logo.png" alt="Logo" style="width: 90px; height: 90px; border-radius: 20px; border: 3px solid #eab308; margin-bottom: 10px;">
     
-    <!-- Nama Bisnes Warna Hijau-Merah-Gold -->
-    <h1 style="font-size: 32px; margin: 0; font-weight: 900; text-transform: uppercase; background: linear-gradient(90deg, #22c55e 0%, #ef4444 50%, #eab308 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+    <!-- Nama Bisnes dengan Animasi Bergerak -->
+    <h1 style="
+        font-size: 32px; 
+        margin: 0; 
+        font-weight: 900; 
+        text-transform: uppercase; 
+        background: linear-gradient(90deg, #22c55e, #ef4444, #eab308, #22c55e);
+        background-size: 300% auto;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        animation: gerakWarna 3s linear infinite;
+    ">
         ANWSTORE
     </h1>
+
+    <!-- Kod Animasi (Penting: Jangan padam bahagian <style> ini) -->
+    <style>
+        @keyframes gerakWarna {
+            0% { background-position: 0% center; }
+            100% { background-position: 100% center; }
+        }
+    </style>
     
     <!-- Slogan & Info -->
-    <p style="color: #cbd5e1; font-size: 14px; margin: 5px 0;">Pakar Kerja Besi Seremban (NS0079416-W)</p>
+    <p style="color: #cbd5e1; font-size: 14px; margin: 5px 0;">CPM1 TOOL</p>
     <div style="font-size: 12px; color: #4ade80;">● Server Online 24 Jam</div>
 </div>
 
